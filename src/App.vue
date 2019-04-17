@@ -90,9 +90,10 @@ export default {
     },
     mounted: function () {
        if(window.localStorage.getItem('cart') === null){
-        window.localStorage.setItem('cart', JSON.stringify());
+        window.localStorage.setItem('cart', JSON.stringify())
        }else{
         this.cart = JSON.parse(window.localStorage.getItem('cart'))
+        this.total = this.shoppingCartTotal
        }
   }
 
