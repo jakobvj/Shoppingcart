@@ -4,14 +4,14 @@
         <img :src="item.imageSrc" :alt="item.name" class="ItemImage">
         <div class="ItemDetails">
             <p><strong>{{item.name}}</strong></p>
-            <p>Price: <strong>${{item.price}}</strong></p>
+            <p>Pris: <strong>{{item.price}} Kr</strong></p>
         </div>
 
         <!-- Button component -->
         <Shop-Button-Add
                 @button-clicked="addToCart(item)"
                 :item="item">
-            <p>Add To Cart</p>
+            <p>Tilføj kurv</p>
         </Shop-Button-Add>
 
     </div>

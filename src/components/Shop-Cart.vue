@@ -1,12 +1,12 @@
 <template>
     <div class="Cart">
-        <p>Cart: {{this.cart.length}} items</p>
+        <p>Kurv: {{this.cart.length}} frugter</p>
         <!-- Button component -->
         <Shop-Button-Empty
                 @emit-empty-cart="emitEmptyCart">
-            <p>Empty Cart</p>
+            <p>Tøm kurv</p>
         </Shop-Button-Empty>
-        <p>Total: ${{this.total}}</p>
+        <p>Total: {{this.total}} Kr</p>
     </div>
 </template>
 

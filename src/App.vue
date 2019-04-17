@@ -5,7 +5,7 @@
 
     <section class="Header">
 
-      <h1>Fruiticious!</h1>
+      <h1>Frugtshoppen!</h1>
       <!-- Cart component -->
       <shop-cart
           :cart="this.cart"
@@ -108,7 +108,7 @@ body {
   padding: 0;
   min-height: 100vh;
   max-width: 800px;
-  background: linear-gradient(#fcac00, #b60000);
+  background: #c9ddff;
   font-family: arial, sans-serif;
 }
 
@@ -132,7 +132,7 @@ h1 {
   width: auto;
   display: flex;
   /*border: 1px solid;*/
-  background: linear-gradient(#ae0220, red);
+  background: #9bb2ff;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
