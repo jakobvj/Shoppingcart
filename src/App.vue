@@ -47,19 +47,19 @@ export default {
             items: [
                 {
                     id: 205,
-                    name: 'Banana',
+                    name: 'Banan',
                     price: 1,
                     imageSrc: Banana
                 },
                 {
                     id: 148,
-                    name: 'Orange',
+                    name: 'Appelsin',
                     price: 2,
                     imageSrc: Orange
                 },
                 {
                     id: 248,
-                    name: 'Apple',
+                    name: 'Æble',
                     price: 1,
                     imageSrc: Apple
                 }
@@ -76,19 +76,22 @@ export default {
     methods: {
         updateCart(e) {
             this.cart.push(e);
-            //this.cart = ;
+            // Ligger vores cart array i localstorage
             window.localStorage.setItem('cart', JSON.stringify(this.cart));
             this.total = this.shoppingCartTotal;
-            //console.log(VueCookies.get('cart4'))
         },
 
         emptyCart() {
             this.cart = [];
             this.total = 0;
+            // Rydder vores localstorage
             localStorage.removeItem('cart')
         }
     },
     mounted: function () {
+      // Checker om der allerede ligger en kurv i localstorage
+      // Vis ikke bliver den tilføjet
+      // Ellers bliver den eksisterende kurv lagt i cart-arrayet 
        if(window.localStorage.getItem('cart') === null){
         window.localStorage.setItem('cart', JSON.stringify())
        }else{
@@ -121,7 +124,7 @@ h1 {
   font-size: 3.5em;
   font-family: 'Lobster', cursive;
   font-weight: 300;
-  color: yellow;
+  color: rgb(55, 0, 255);
   text-align: center;
 
 }
@@ -152,7 +155,7 @@ h1 {
   width: 120px;
   height: 60px;
   border-radius: 5px;
-  background: radial-gradient(#6bf88e, #5ce561);
+  background: #b96bf8;
   color: white;
   font-size: 14px;
   cursor: pointer;
