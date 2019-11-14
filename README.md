@@ -1,5 +1,5 @@
 # vue-cart-emit-example
-
+Eksempel på at lave en yderst simpelt indkøbskurv med localstorage
 ## Project setup
 ```
 npm install
